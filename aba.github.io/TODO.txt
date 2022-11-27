@@ -1,0 +1,2 @@
+- Change Colour of Footer 
+- Style banner home page text
