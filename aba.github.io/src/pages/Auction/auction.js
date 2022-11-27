@@ -6,8 +6,6 @@ export const AuctionPage = () => {
   return (
     <>
         <AuctionPageBanner />
-        <br></br>
-        <br></br>
         <TierList />
     </>
   )

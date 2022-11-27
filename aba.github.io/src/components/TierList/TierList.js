@@ -3,7 +3,6 @@ import { supabase } from '../../supabase/initialize'
 import { useState, useEffect } from 'react'
 import { Puff } from  'react-loader-spinner'
 import styled from 'styled-components';
-// import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
 const Wrapper = styled.div`
   .wrapper{
@@ -33,14 +32,11 @@ export function TierList() {
           `)  
           console.log(test)
           console.log(error)
+
+          test.sort((a,b) => (a.tier > b.tier) ? 1 : ((b.tier > a.tier) ? -1 : 0))
       
           setData(test);
           setLoading(false);
-          // team name = test[0].name; or test.name
-          // logo = test[0].logo; or test.logo
-          // desc = test[0].desc; or test.desc
-          // setData(test);
-          // setLoading(false);
       }
       catch (err) {
           console.error(err.message);
@@ -55,19 +51,19 @@ export function TierList() {
   if (loading) {
     return (
         <Wrapper>
-        <div className="wrapper">
-        <Puff
-        height="200"
-        width="200"
-        radisu={1}
-        color="#1b0c7a"
-        ariaLabel="puff-loading"
-        wrapperStyle={{}}
-        wrapperClass=""
-        visible={true}
-        />
-    </div>
-    </Wrapper>
+            <div className="wrapper">
+                <Puff
+                height="200"
+                width="200"
+                radisu={1}
+                color="#1b0c7a"
+                ariaLabel="puff-loading"
+                wrapperStyle={{}}
+                wrapperClass=""
+                visible={true}
+                />
+            </div>
+        </Wrapper>
     )
 }
 
@@ -75,7 +71,7 @@ export function TierList() {
     <Container lg >
     <Grid.Container gap={1} justify="flex-start">
       {data.map((item, index) => (
-        <Grid xs={6} sm={3} key={index}>
+        <Grid xs={12} sm={3} key={index}>
           <Card isPressable>
             <Card.Body css={{ p: 0 }}>
               <Card.Image
