@@ -40,6 +40,7 @@ export function Footer() {
   return (
     <Box
       color={useColorModeValue('gray.700', 'gray.200')}
+      bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
     >
       <Container
         as={Stack}

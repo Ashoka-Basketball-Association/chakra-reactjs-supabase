@@ -5,9 +5,11 @@ import { TierList} from "../../components/TierList/TierList"
 export const AuctionPage = () => {
   return (
     <>
-      <AuctionPageBanner />
-      <TierList />
+        <AuctionPageBanner />
+        <br></br>
+        <br></br>
+        <TierList />
     </>
-  );
+  )
 };
 

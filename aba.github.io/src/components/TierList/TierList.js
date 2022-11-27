@@ -72,8 +72,8 @@ export function TierList() {
 }
 
   return (
-    <Container lg css = {{ backgroundColor: "#eee", borderRadius: "20px" }} >
-    <Grid.Container gap={2} justify="flex-start">
+    <Container lg >
+    <Grid.Container gap={1} justify="flex-start">
       {data.map((item, index) => (
         <Grid xs={6} sm={3} key={index}>
           <Card isPressable>
@@ -88,26 +88,30 @@ export function TierList() {
             </Card.Body>
             <Card.Footer css={{ justifyItems: "flex-start" }}>
             <Col>
-              <Row wrap="wrap" justify="space-between" align="center">
-                <Text b>{item.name}</Text>
+              <Row wrap="wrap" justify="space-between" align="center" white-space="nowrap">
+                <Text><b>{item.name}</b> - {item.position}</Text>
                 <Text css={{ color: "$accents7", fontWeight: "$semibold", fontSize: "$sm" }}>
-                    Tier {item.tier}
+                    {item.tier}
                 </Text>
               </Row>
               <Row wrap="wrap" justify="space-between" align="center">
                 <Text h4>
                 {item.desc}
                 </Text>
-                <Text css={{ color: "$accents10", fontWeight: "$bold", fontSize: "$sm" }}>
+                {/* <Text css={{ color: "$accents10", fontWeight: "$bold", fontSize: "$sm" }}>
                   {item.position}
-                </Text>
+                </Text> */}
             </Row>
             </Col>
             </Card.Footer>
           </Card>
         </Grid>
       ))}
+      
     </Grid.Container>
+    <br>
+    </br>
+    <br></br>
     </Container>
   );
 }
