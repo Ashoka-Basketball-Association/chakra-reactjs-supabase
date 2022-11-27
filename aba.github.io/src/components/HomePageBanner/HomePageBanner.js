@@ -25,7 +25,10 @@ const Wrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 60px;
+    padding-bottom: 35vh;
+    font-size: 5vmax;
+    text-align: center;
+    white-space: nowrap;
     color: white;
   }
 `;
