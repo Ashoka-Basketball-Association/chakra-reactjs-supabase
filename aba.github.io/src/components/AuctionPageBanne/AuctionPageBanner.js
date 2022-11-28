@@ -24,7 +24,8 @@ import {
             <Heading
                 lineHeight={1.1}
                 fontWeight={600}
-                fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}>
+                fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}
+                textAlign="center">
                 <Text
                 as={'span'}
                 position={'relative'}
@@ -45,7 +46,7 @@ import {
                 Welcome to the Auction
                 </Text>
             </Heading>
-            <Text color={'gray.500'}>
+            <Text color={'gray.500'} textAlign="center">
                 Welcome to the ABA 6.0 Auction. Find details about all the players who are eligible to be bought, and prepare to the build the best team possible!
             </Text>
             </Stack>
