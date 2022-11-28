@@ -64,7 +64,12 @@ export function TeamsGrid(){
             teams.sort((a,b) => (a.id > b.id) ? 1 : ((b.id > a.id) ? -1 : 0))
             
             for (var j in test){
-                teams[test[j].team.id].players.push(test[j])
+                try{
+                    teams[test[j].team.id].players.push(test[j])
+                }   
+                catch(err){
+                    console.error(err)
+                }
             }
 
             setData(teams);
