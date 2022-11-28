@@ -7,6 +7,7 @@ import Header from './components/Header/Header';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import { AuctionPage } from './pages/Auction/auction';
+import { TeamPage } from './pages/Teams/teams'
 
 const theme = extendTheme({
   fonts: {
@@ -24,6 +25,7 @@ function App() {
             <Routes>
               <Route exact path="/" element={<HomePage />} />
               <Route exact path="/auction" element={<AuctionPage />} />
+              <Route exact path="/teams" element={<TeamPage />} />
             </Routes>
           </Router>
         </div>
