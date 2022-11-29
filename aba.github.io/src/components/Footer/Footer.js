@@ -10,7 +10,7 @@ import {
   VisuallyHidden,
 } from '@chakra-ui/react';
 import logo from '../../assets/img/ABA.png';
-import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { FaInstagram, FaTwitter } from 'react-icons/fa';
 
 const SocialButton = ({ children, label, href }) => {
   return (
@@ -52,10 +52,16 @@ export function Footer() {
       >
         <Image src={logo} height={24} />
         <Stack direction={'row'} spacing={6}>
-          <Link href={'#'}>Home</Link>
-          <Link href={'#'}>About</Link>
-          <Link href={'#'}>Blog</Link>
-          <Link href={'#'}>Contact</Link>
+          <Link href={'/'}>Home</Link>
+          <Link href={'/auction'}>Auction</Link>
+          <Link href={'/teams'}>Teams</Link>
+          <Link href={'/games'}>Games</Link>
+          <Link href={'/highlights'}>Highlights</Link>
+        </Stack>
+        <Stack direction={'row'} spacing={6}>
+          <Link href={'/sponsors'}>Sponsors</Link>
+          <Link href={'/archive'}>Archive</Link>
+          <Link href={'/court-booking'}>Court Booking</Link>
         </Stack>
       </Container>
 
@@ -73,14 +79,14 @@ export function Footer() {
           justify={{ base: 'center', md: 'space-between' }}
           align={{ base: 'center', md: 'center' }}
         >
-          <Text>© 2022 Chakra Templates. All rights reserved</Text>
+          <Text>Made with ❤️ by Pranav Iyengar and Siddh Veer Bakshi</Text>
           <Stack direction={'row'} spacing={6}>
             <SocialButton label={'Twitter'} href={'#'}>
               <FaTwitter />
             </SocialButton>
-            <SocialButton label={'YouTube'} href={'#'}>
+            {/* <SocialButton label={'YouTube'} href={'#'}>
               <FaYoutube />
-            </SocialButton>
+            </SocialButton> */}
             <SocialButton label={'Instagram'} href={'#'}>
               <FaInstagram />
             </SocialButton>
