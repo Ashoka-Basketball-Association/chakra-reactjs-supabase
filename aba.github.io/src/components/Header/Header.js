@@ -1,19 +1,21 @@
-import { Navbar, Link, Text, Avatar, Dropdown } from '@nextui-org/react';
+import { Navbar, Link, Text } from '@nextui-org/react';
 // import { Layout } from './Layout.js';
 
 export default function Header() {
-  const collapseItems = [
-    'Profile',
-    'Dashboard',
-    'Activity',
-    'Analytics',
-    'System',
-    'Deployments',
-    'My Settings',
-    'Team Settings',
-    'Help & Feedback',
-    'Log Out',
+  const items = [
+    {value:'Home', href:"/"},
+    {value:'Auction', href:"/auction"},
+    {value:'Teams', href:"/teams"},
+    {value:'Games', href:'/games'},
+    {value:'Highlights', href:'/highlights'},
+    {value:'Sponsors', href:"/sponsors"},
+    {value:'Archive', href:"/archive"},
+    {value:'Court Booking', href:'/court-booking'}
   ];
+
+  var active = window.location.pathname;
+  // console.log(active);
+  // console.log(active.substring(0,items[2].href.length+1))
 
   return (
     // <Layout>
@@ -31,7 +33,7 @@ export default function Header() {
       >
         {/* <AcmeLogo /> */}
         <Text b color="inherit" hideIn="xs">
-          ACME
+          ABA 6.0
         </Text>
       </Navbar.Brand>
       <Navbar.Content
@@ -40,12 +42,15 @@ export default function Header() {
         hideIn="xs"
         variant="highlight-rounded"
       >
-        <Navbar.Link href="#">Features</Navbar.Link>
-        <Navbar.Link isActive href="#">
-          Customers
-        </Navbar.Link>
-        <Navbar.Link href="#">Pricing</Navbar.Link>
-        <Navbar.Link href="#">Company</Navbar.Link>
+       {items.map((item, index) => (
+          <Navbar.Link
+            key={item}
+            isActive={item.href===active.substring(0,item.href.length+1)}
+            href={item.href}
+          >
+              {item.value}
+          </Navbar.Link>
+        ))}
       </Navbar.Content>
       <Navbar.Content
         css={{
@@ -55,67 +60,22 @@ export default function Header() {
           },
         }}
       >
-        <Dropdown placement="bottom-right">
-          <Navbar.Item>
-            <Dropdown.Trigger>
-              <Avatar
-                bordered
-                as="button"
-                color="secondary"
-                size="md"
-                src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
-              />
-            </Dropdown.Trigger>
-          </Navbar.Item>
-          <Dropdown.Menu
-            aria-label="User menu actions"
-            color="secondary"
-            onAction={actionKey => console.log({ actionKey })}
-          >
-            <Dropdown.Item key="profile" css={{ height: '$18' }}>
-              <Text b color="inherit" css={{ d: 'flex' }}>
-                Signed in as
-              </Text>
-              <Text b color="inherit" css={{ d: 'flex' }}>
-                zoey@example.com
-              </Text>
-            </Dropdown.Item>
-            <Dropdown.Item key="settings" withDivider>
-              My Settings
-            </Dropdown.Item>
-            <Dropdown.Item key="team_settings">Team Settings</Dropdown.Item>
-            <Dropdown.Item key="analytics" withDivider>
-              Analytics
-            </Dropdown.Item>
-            <Dropdown.Item key="system">System</Dropdown.Item>
-            <Dropdown.Item key="configurations">Configurations</Dropdown.Item>
-            <Dropdown.Item key="help_and_feedback" withDivider>
-              Help & Feedback
-            </Dropdown.Item>
-            <Dropdown.Item key="logout" withDivider color="error">
-              Log Out
-            </Dropdown.Item>
-          </Dropdown.Menu>
-        </Dropdown>
       </Navbar.Content>
       <Navbar.Collapse>
-        {collapseItems.map((item, index) => (
+        {items.map((item, index) => (
           <Navbar.CollapseItem
             key={item}
             activeColor="secondary"
-            css={{
-              color: index === collapseItems.length - 1 ? '$error' : '',
-            }}
-            isActive={index === 2}
+            isActive={item.href===active.substring(0,item.href.length+1)}
           >
             <Link
               color="inherit"
               css={{
                 minWidth: '100%',
               }}
-              href="#"
+              href={item.href}
             >
-              {item}
+              {item.value}
             </Link>
           </Navbar.CollapseItem>
         ))}

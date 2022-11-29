@@ -80,8 +80,27 @@ export function TeamsGrid(){
         }
     }
 
+    const getData2 = async () => {
+        try{
+            let { data: test, error } = await supabase
+            .from('teams')
+            .select('*')  
+            var teams = [];
+                
+                if (error){
+                    console.log(error);
+                }
+            
+            setData(test);
+            setLoading(false);
+        }
+        catch (err) {
+            console.error(err.message);
+        }
+    }
+
     useEffect(() => {
-        getData();
+        getData2();
     }, []);
 
 

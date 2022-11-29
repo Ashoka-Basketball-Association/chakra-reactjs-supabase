@@ -72,7 +72,7 @@ export function TierList() {
     <Grid.Container gap={1} justify="flex-start">
       {data.map((item, index) => (
         <Grid xs={12} sm={3} key={index}>
-          <Card isPressable>
+          <Card>
             <Card.Body css={{ p: 0 }}>
               <Card.Image
                 src={item.pic}
