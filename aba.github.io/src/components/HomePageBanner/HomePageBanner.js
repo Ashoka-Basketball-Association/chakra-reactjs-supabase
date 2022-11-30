@@ -18,14 +18,14 @@ const Wrapper = styled.div`
 
   .content {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     top: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 35vh;
+    // padding-bottom: 35vh;
     font-size: 5vmax;
     text-align: center;
     white-space: nowrap;
