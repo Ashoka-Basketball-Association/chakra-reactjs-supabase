@@ -1,4 +1,5 @@
 {
+  "homepage": "http://Ashoka-Basketball-Association.github.io/chakra-reactjs-supabase",
   "name": "aba.github.io",
   "version": "0.1.0",
   "private": true,
@@ -14,6 +15,7 @@
     "@testing-library/react": "^13.0.1",
     "@testing-library/user-event": "^14.1.0",
     "framer-motion": "^6.2.9",
+    "gh-pages": "^4.0.0",
     "instafeed.js": "^2.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -28,6 +30,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+      "predeploy": "yarn run build",
+      "deploy": "gh-pages -d build",
     "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
