@@ -7,9 +7,17 @@ import {
   Text,
   useBreakpointValue,
 } from '@chakra-ui/react';
+import React from 'react';
+import { Checkbox, Input, Modal, Popover, Row } from '@nextui-org/react';
 import pic from '../../../assets/img/pic1.jpg';
 
 export default function HomePageAbout() {
+  const [visible, setVisible] = React.useState(false);
+  const handler = () => setVisible(true);
+  const closeHandler = () => {
+    setVisible(false);
+    console.log('closed');
+  };
   return (
     <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
       <Flex p={8} flex={1} align={'center'} justify={'center'}>
@@ -49,10 +57,80 @@ export default function HomePageAbout() {
               _hover={{
                 bg: 'blue.500',
               }}
+              onClick={handler}
             >
               Contact Us
             </Button>
-            <Button rounded={'full'}>How To Register</Button>
+            <Modal
+              closeButton
+              preventClose
+              aria-labelledby="modal-title"
+              open={visible}
+              onClose={closeHandler}
+            >
+              <Modal.Header>
+                <Text id="modal-title" style={{ fontSize: '20px' }}>
+                  Contact Us
+                  <Text b size={18}></Text>
+                </Text>
+              </Modal.Header>
+              <Modal.Body>
+                <Input
+                  clearable
+                  bordered
+                  fullWidth
+                  color="primary"
+                  size="lg"
+                  placeholder="Email"
+                  // contentLeft={<Mail fill="currentColor" />}
+                />
+                <Input
+                  clearable
+                  bordered
+                  fullWidth
+                  color="primary"
+                  size="lg"
+                  placeholder="Phone Nunber"
+                  // contentLeft={<Password fill="currentColor" />}
+                />
+                <Input
+                  clearable
+                  bordered
+                  fullWidth
+                  color="primary"
+                  size="lg"
+                  placeholder="Comment"
+                  // contentLeft={<Password fill="currentColor" />}
+                />
+                <Row justify="space-between">
+                  {/* <Checkbox> */}
+                  <Text size={14}></Text>
+                  {/* </Checkbox> */}
+                  <Text size={14}></Text>
+                </Row>
+              </Modal.Body>
+              <Modal.Footer>
+                <Button auto flat color="error" onClick={closeHandler}>
+                  Close
+                </Button>
+                <Button auto onClick={closeHandler}>
+                  Send
+                </Button>
+              </Modal.Footer>
+            </Modal>
+            <Popover isBordered disableShadow>
+              <Popover.Trigger>
+                <Button rounded={'full'}>How To Register</Button>
+              </Popover.Trigger>
+              <Popover.Content>
+                <Text
+                  css={{ h1: '$20' }}
+                  style={{ padding: '15px', fontSize: '20px' }}
+                >
+                  Registrations are currently closed for ABA 6.0
+                </Text>
+              </Popover.Content>
+            </Popover>
           </Stack>
         </Stack>
       </Flex>
