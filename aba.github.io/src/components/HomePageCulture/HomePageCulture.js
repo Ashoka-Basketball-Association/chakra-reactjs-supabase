@@ -1,108 +1,84 @@
+import { ReactElement } from 'react';
 import {
-  Container,
+  Box,
   SimpleGrid,
-  Image,
-  Flex,
-  Heading,
+  Icon,
   Text,
   Stack,
-  StackDivider,
-  Icon,
-  useColorModeValue,
+  Flex,
+  Heading,
 } from '@chakra-ui/react';
-import {
-  IoAnalyticsSharp,
-  IoLogoBitcoin,
-  IoSearchSharp,
-} from 'react-icons/io5';
-import { ReactElement } from 'react';
+import { FcAssistant, FcDonate, FcIdea, FcInTransit } from 'react-icons/fc';
+import { MdSportsBasketball } from 'react-icons/md';
+import { RiTeamFill } from 'react-icons/ri';
+import { IoIosBulb } from 'react-icons/io';
 
 // interface FeatureProps {
+//   title: string;
 //   text: string;
-//   iconBg: string;
-//   icon?: ReactElement;
+//   icon: ReactElement;
 // }
 
-const Feature = ({ text, icon, iconBg }) => {
+const Feature = ({ title, text, icon }) => {
   return (
-    <Stack direction={'row'} align={'center'}>
+    <Stack>
       <Flex
-        w={8}
-        h={8}
+        w={16}
+        h={16}
         align={'center'}
         justify={'center'}
+        color={'white'}
         rounded={'full'}
-        bg={iconBg}
+        bg={'gray.100'}
+        mb={1}
       >
         {icon}
       </Flex>
-      <Text fontWeight={600}>{text}</Text>
+      <Text fontWeight={600}>{title}</Text>
+      <Text color={'gray.600'}>{text}</Text>
     </Stack>
   );
 };
 
-export default function HomePageCulture() {
+export default function SimpleThreeColumns() {
   return (
-    <Container maxW={'5xl'} py={12}>
-      <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
-        <Stack spacing={4}>
-          <Text
-            textTransform={'uppercase'}
-            color={'blue.400'}
-            fontWeight={600}
-            fontSize={'sm'}
-            bg={useColorModeValue('blue.50', 'blue.900')}
-            p={2}
-            alignSelf={'flex-start'}
-            rounded={'md'}
-          >
-            ABA CULTURE{' '}
-          </Text>
-          <Heading>A 3V3 BASKETBALL TOURNAMENT</Heading>
-          <Text color={'gray.500'} fontSize={'lg'}>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore
-          </Text>
-          <Stack
-            spacing={4}
-            divider={
-              <StackDivider
-                borderColor={useColorModeValue('gray.100', 'gray.700')}
-              />
+    <Box background="#eee;">
+      <Box p={4} style={{ paddingBottom: '50px', background: '' }}>
+        <Heading
+          as="h2"
+          size="3xl"
+          mt={6}
+          mb={2}
+          style={{ textAlign: 'center', paddingBottom: '20px' }}
+        >
+          ABA Culture
+        </Heading>
+        <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
+          <Feature
+            icon={
+              <Icon as={MdSportsBasketball} w={10} h={10} color={'black'} />
             }
-          >
-            <Feature
-              icon={
-                <Icon as={IoAnalyticsSharp} color={'yellow.500'} w={5} h={5} />
-              }
-              iconBg={useColorModeValue('yellow.100', 'yellow.900')}
-              text={'Business Planning'}
-            />
-            <Feature
-              icon={<Icon as={IoLogoBitcoin} color={'green.500'} w={5} h={5} />}
-              iconBg={useColorModeValue('green.100', 'green.900')}
-              text={'Financial Planning'}
-            />
-            <Feature
-              icon={
-                <Icon as={IoSearchSharp} color={'purple.500'} w={5} h={5} />
-              }
-              iconBg={useColorModeValue('purple.100', 'purple.900')}
-              text={'Market Analysis'}
-            />
-          </Stack>
-        </Stack>
-        <Flex>
-          <Image
-            rounded={'md'}
-            alt={'feature image'}
-            src={
-              'https://images.unsplash.com/photo-1554200876-56c2f25224fa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
+            title={'Basketball'}
+            text={
+              'ABA promotes sport at Ashoka and produces an environment for everyone to compete in different aspects of a sporting league ranging from scouting, auctioning, playing and hosting.'
             }
-            objectFit={'cover'}
           />
-        </Flex>
-      </SimpleGrid>
-    </Container>
+          <Feature
+            icon={<Icon as={IoIosBulb} w={10} h={10} color={'black'} />}
+            title={'Team Strategy'}
+            text={
+              'Team owners plan and scout players to bid for at the auction, later to manage and coach at the matchoffs.'
+            }
+          />
+          <Feature
+            icon={<Icon as={RiTeamFill} w={10} h={10} color={'black'} />}
+            title={'Community'}
+            text={
+              'Ashokans come together for ABA weekend in large numbers and tune in to watch their friends play and manage their respective 3v3 teams. Everyone loves a good show of hoop skills!'
+            }
+          />
+        </SimpleGrid>
+      </Box>
+    </Box>
   );
 }

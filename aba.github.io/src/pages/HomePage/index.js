@@ -3,8 +3,8 @@ import HomePageAbout from '../../components/HomePageAbout/HomePageAbout';
 import HomePageBanner from '../../components/HomePageBanner/HomePageBanner';
 import HomePageCulture from '../../components/HomePageCulture/HomePageCulture';
 import HomePageInstaFeed from '../../components/HomePageInstaFeed/HomePageInstaFeed';
+import HomePagePrizes from '../../components/HomePagePrizes/HomePagePrizes';
 // import { QuickNews } from "../../components/QuickNews/QuickNews"
-
 
 const HomePage = () => {
   return (
@@ -12,8 +12,9 @@ const HomePage = () => {
       {/* <QuickNews /> */}
       <HomePageBanner />
       <HomePageAbout />
-      {/* <HomePageInstaFeed /> 
-      <HomePageCulture /> */}
+      {/* <HomePageInstaFeed /> */}
+      <HomePageCulture />
+      <HomePagePrizes />
     </>
   );
 };
