@@ -15,7 +15,7 @@ const NewsTicker = () => {
           fontFamily: 'Manrope, sans-serif',
         }}
       >
-        AUCTION TONIGHT AT THE SPORTS MPH! &nbsp; BE THERE AT 6:30PM
+        AUCTION TONIGHT AT THE SPORTS MPH! &nbsp; BE THERE AT 7:00PM
       </h1>
     </Marquee>
   );

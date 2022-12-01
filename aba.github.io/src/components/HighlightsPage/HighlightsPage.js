@@ -12,6 +12,7 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react';
 import HomePageInstaFeed from '../HomePage/HomePageInstaFeed/HomePageInstaFeed';
+import highlights from "../../assets/img/highlights.JPG"
 
 export function HighlightsPage() {
   return (
@@ -47,7 +48,7 @@ export function HighlightsPage() {
             </Text>
             <br />
             <Text as={'span'} color={'red.400'}>
-              Highlights Page
+              Highlights
             </Text>
           </Heading>
           <Text color={'gray.500'} textAlign="center">
@@ -97,7 +98,7 @@ export function HighlightsPage() {
               w={'100%'}
               h={'100%'}
               src={
-                'https://news.cgtn.com/news/2022-04-03/NBA-highlights-on-April-2-Do-Jazz-know-how-to-deal-with-big-lead--18VPLVbjbYk/img/21d89522151e413f94ef4ba8e6626756/21d89522151e413f94ef4ba8e6626756.jpeg'
+                highlights
               }
             />
           </Box>

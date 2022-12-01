@@ -117,6 +117,8 @@ import {
     // createIcon,
     useColorModeValue,
     } from '@chakra-ui/react';
+
+    import teamwork from "../../assets/img/teamwork.JPG";
     
     export function TeamsBanner() {
     return (
@@ -197,7 +199,7 @@ import {
                 w={'100%'}
                 h={'100%'}
                 src={
-                    'https://www.fiba.basketball/api/img/graphic/186e610d-8934-4d08-b167-59614cabd918/940/529'
+                    teamwork
                 }
                 />
             </Box>

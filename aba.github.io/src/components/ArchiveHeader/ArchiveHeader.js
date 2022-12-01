@@ -8,7 +8,7 @@ import {
     useColorModeValue,
   } from '@chakra-ui/react'
   import * as React from 'react'
-  import archivebanner from "../../assets/img/archivebanner.jpeg"
+  import archive from "../../assets/img/archive.JPG"
   
   export const ArchiveHeader = () => (
     <Box background="#eee;" pb={2}>
@@ -85,7 +85,7 @@ import {
         </Box>
         <Flex flex="1" overflow="hidden">
           <Image
-            src={archivebanner}
+            src={archive}
             alt="Lovely Image"
             fallback={<Skeleton />}
             maxH="450px"

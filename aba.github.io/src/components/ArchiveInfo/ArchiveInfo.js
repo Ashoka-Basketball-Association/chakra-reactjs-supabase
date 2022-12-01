@@ -17,7 +17,8 @@ import {
     IoCalendarNumber,
     IoCashOutline
   } from 'react-icons/io5';
-  import aba5 from "../../assets/img/aba5.jpeg"
+  import aba5 from "../../assets/img/aba5.jpeg";
+  import four from "../../assets/img/4.0.JPG";
   
   const Feature = ({ text, icon, iconBg }) => {
     return (
@@ -115,7 +116,7 @@ import {
             <Image
               rounded={'md'}
               alt={'feature image'}
-              src={aba5
+              src={four
               }
               objectFit={'cover'}
             />

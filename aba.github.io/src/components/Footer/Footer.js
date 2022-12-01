@@ -81,13 +81,10 @@ export function Footer() {
         >
           <Text>Made with ❤️ by Pranav Iyengar and Siddh Veer Bakshi</Text>
           <Stack direction={'row'} spacing={6}>
-            <SocialButton label={'Twitter'} href={'#'}>
-              <FaTwitter />
-            </SocialButton>
             {/* <SocialButton label={'YouTube'} href={'#'}>
               <FaYoutube />
             </SocialButton> */}
-            <SocialButton label={'Instagram'} href={'#'}>
+            <SocialButton label={'Instagram'} href={'https://www.instagram.com/aba_ashoka/'}>
               <FaInstagram />
             </SocialButton>
           </Stack>
