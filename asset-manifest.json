@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/chakra-reactjs-supabase/static/css/main.9e16bdc4.css",
-    "main.js": "/chakra-reactjs-supabase/static/js/main.90e28596.js",
-    "static/media/teamwork.JPG": "/chakra-reactjs-supabase/static/media/teamwork.f1ee1e2ac1ee95116ebc.JPG",
-    "static/media/4.0.JPG": "/chakra-reactjs-supabase/static/media/4.0.9bb7d2936f85e1b21ea2.JPG",
-    "static/media/archive.JPG": "/chakra-reactjs-supabase/static/media/archive.186f5cca0be9f66c82f2.JPG",
-    "static/media/highlights.JPG": "/chakra-reactjs-supabase/static/media/highlights.8deff7df8d27a18a183a.JPG",
-    "static/media/bannerVideo.mp4": "/chakra-reactjs-supabase/static/media/bannerVideo.cb2251739c20ac12960d.mp4",
-    "static/media/pic1.jpg": "/chakra-reactjs-supabase/static/media/pic1.1fecfa2ecdd2c8206d57.jpg",
-    "static/media/aba5.jpeg": "/chakra-reactjs-supabase/static/media/aba5.b8c445ca6d26830ed4ca.jpeg",
-    "static/media/ABA.png": "/chakra-reactjs-supabase/static/media/ABA.aae751b0b8885abaf538.png",
-    "index.html": "/chakra-reactjs-supabase/index.html",
-    "main.9e16bdc4.css.map": "/chakra-reactjs-supabase/static/css/main.9e16bdc4.css.map",
-    "main.90e28596.js.map": "/chakra-reactjs-supabase/static/js/main.90e28596.js.map"
+    "main.css": "/static/css/main.9e16bdc4.css",
+    "main.js": "/static/js/main.9a871aac.js",
+    "static/media/teamwork.JPG": "/static/media/teamwork.f1ee1e2ac1ee95116ebc.JPG",
+    "static/media/4.0.JPG": "/static/media/4.0.9bb7d2936f85e1b21ea2.JPG",
+    "static/media/archive.JPG": "/static/media/archive.186f5cca0be9f66c82f2.JPG",
+    "static/media/highlights.JPG": "/static/media/highlights.8deff7df8d27a18a183a.JPG",
+    "static/media/bannerVideo.mp4": "/static/media/bannerVideo.cb2251739c20ac12960d.mp4",
+    "static/media/pic1.jpg": "/static/media/pic1.1fecfa2ecdd2c8206d57.jpg",
+    "static/media/aba5.jpeg": "/static/media/aba5.b8c445ca6d26830ed4ca.jpeg",
+    "static/media/ABA.png": "/static/media/ABA.aae751b0b8885abaf538.png",
+    "index.html": "/index.html",
+    "main.9e16bdc4.css.map": "/static/css/main.9e16bdc4.css.map",
+    "main.9a871aac.js.map": "/static/js/main.9a871aac.js.map"
   },
   "entrypoints": [
     "static/css/main.9e16bdc4.css",
-    "static/js/main.90e28596.js"
+    "static/js/main.9a871aac.js"
   ]
 }
