@@ -11,7 +11,7 @@ import {
   import archivebanner from "../../assets/img/archivebanner.jpeg"
   
   export const ArchiveHeader = () => (
-    <Box background="#eee;">
+    <Box background="#eee;" pb={2}>
     <Box
       maxW="7xl"
       mx="auto"

@@ -15,6 +15,7 @@ import {
     IoMedalOutline,
     IoPodium,
     IoCalendarNumber,
+    IoCashOutline
   } from 'react-icons/io5';
   import aba5 from "../../assets/img/aba5.jpeg"
   
@@ -68,12 +69,17 @@ import {
                   <Icon as={IoMedalOutline} color={'yellow.500'} w={5} h={5} />
                 }
                 iconBg={useColorModeValue('yellow.100', 'yellow.900')}
-                text={'Winner - Mylapora Machas'}
+                text={'Winner - Mylapore Machas'}
               />
               <Feature
                 icon={<Icon as={IoPodium} color={'green.500'} w={5} h={5} />}
                 iconBg={useColorModeValue('green.100', 'green.900')}
-                text={'MVP - Arjun Khanna'}
+                text={'Men\'s MVP - Arjun Khanna'}
+              />
+              <Feature
+               icon={<Icon as={IoPodium} color={'orange.500'} w={5} h={5} />}
+               iconBg={useColorModeValue('orange.100', 'orange.900')}
+                text={'Non Cis Men\'s MVP - Harshita Bedi'}
               />
               <Feature
                 icon={
@@ -81,6 +87,13 @@ import {
                 }
                 iconBg={useColorModeValue('purple.100', 'purple.900')}
                 text={'March 12th, 13th, 14th'}
+              />
+              <Feature
+                icon={
+                  <Icon as={IoCashOutline} color={'blue.500'} w={5} h={5} />
+                }
+                iconBg={useColorModeValue('blue.100', 'blue.900')}
+                text={'1st Place Price - 25k'}
               />
             </Stack>
           </Stack>
@@ -117,11 +130,11 @@ import {
               p={2}
               alignSelf={'flex-start'}
               rounded={'md'}>
-              Spring 2022
+              Monson 2019
             </Text>
-            <Heading>ABA 5.0</Heading>
+            <Heading>ABA 4.0</Heading>
             <Text color={'gray.500'} fontSize={'lg'}>
-              ABA 5.0 took place in March of 2022. It was the first ABA to take place after the pandemic, and it exceeeded every expectation.
+              The last ABA to take place before the pandemic, ABA 4.0 showcased the talents of all the Ashokan basketball players - leading to an intense two days of competiton.
             </Text>
             <Stack
               spacing={4}
@@ -135,19 +148,31 @@ import {
                   <Icon as={IoMedalOutline} color={'yellow.500'} w={5} h={5} />
                 }
                 iconBg={useColorModeValue('yellow.100', 'yellow.900')}
-                text={'Winner - Mylapora Machas'}
+                text={'Winner - Lavar Balls'}
               />
               <Feature
                 icon={<Icon as={IoPodium} color={'green.500'} w={5} h={5} />}
                 iconBg={useColorModeValue('green.100', 'green.900')}
-                text={'MVP - Arjun Khanna'}
+                text={'Men\'s MVP - Dhruv Khandelwal'}
+              />
+              <Feature
+                icon={<Icon as={IoPodium} color={'orange.500'} w={5} h={5} />}
+                iconBg={useColorModeValue('orange.100', 'orange.900')}
+                text={'Non-Cis Men\'s MVP - Joyelle Ndikumana'}
               />
               <Feature
                 icon={
                   <Icon as={IoCalendarNumber} color={'purple.500'} w={5} h={5} />
                 }
                 iconBg={useColorModeValue('purple.100', 'purple.900')}
-                text={'March 12th, 13th, 14th'}
+                text={'November 15th, 16th'}
+              />
+              <Feature
+                icon={
+                  <Icon as={IoCashOutline} color={'blue.500'} w={5} h={5} />
+                }
+                iconBg={useColorModeValue('blue.100', 'blue.900')}
+                text={'1st Place Price - 20k'}
               />
             </Stack>
           </Stack>

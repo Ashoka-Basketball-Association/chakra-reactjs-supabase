@@ -6,9 +6,9 @@ import {
   Text,
   Stack,
   Flex,
+  Container,
   Heading,
 } from '@chakra-ui/react';
-import { FcAssistant, FcDonate, FcIdea, FcInTransit } from 'react-icons/fc';
 import { MdSportsBasketball } from 'react-icons/md';
 import { RiTeamFill } from 'react-icons/ri';
 import { IoIosBulb } from 'react-icons/io';
@@ -21,34 +21,37 @@ import { IoIosBulb } from 'react-icons/io';
 
 const Feature = ({ title, text, icon }) => {
   return (
-    <Stack>
+    <Stack py={12} px={6} border={"2px"} borderRadius={"10px"}>
       <Flex
-        w={16}
-        h={16}
-        align={'center'}
-        justify={'center'}
+        w="full"
+        h="full"
+        display={'flex'}
+        alignItems={'center'}
+        justifyContent={'center'}
         color={'white'}
         rounded={'full'}
-        bg={'gray.100'}
+        bg={'#eee;'}
         mb={1}
+        textAlign="center"
       >
         {icon}
       </Flex>
-      <Text fontWeight={600}>{title}</Text>
-      <Text color={'gray.600'}>{text}</Text>
+      <Text fontWeight={600} textAlign="center" fontSize={"2xl"}>{title}</Text>
+      <Text color={'gray.600'} textAlign="center">{text}</Text>
     </Stack>
   );
 };
 
 export default function SimpleThreeColumns() {
   return (
-    <Box background="#eee;">
+      <Box background="#eee;" py={6}>
+        <Container maxW={'10xl'}>
       <Box p={4} style={{ paddingBottom: '50px', background: '' }}>
         <Heading
           as="h2"
           size="3xl"
-          mt={6}
-          mb={2}
+          mt={3}
+          mb={12}
           style={{ textAlign: 'center', paddingBottom: '20px' }}
         >
           ABA Culture
@@ -67,7 +70,7 @@ export default function SimpleThreeColumns() {
             icon={<Icon as={IoIosBulb} w={10} h={10} color={'black'} />}
             title={'Team Strategy'}
             text={
-              'Team owners plan and scout players to bid for at the auction, later to manage and coach at the matchoffs.'
+              'Team owners plan and scout players to bid for at the auction, later to manage and coach at the matchoffs. Understanding personnel, bidding strategy and substitutions - all are part of the game'
             }
           />
           <Feature
@@ -79,6 +82,8 @@ export default function SimpleThreeColumns() {
           />
         </SimpleGrid>
       </Box>
+      </Container>
     </Box>
+    
   );
 }

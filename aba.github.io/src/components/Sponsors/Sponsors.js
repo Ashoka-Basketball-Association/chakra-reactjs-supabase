@@ -14,7 +14,7 @@ import {
     chakra,
     Link,
   } from '@chakra-ui/react';
-  import { FaInstagram, FaTwitter } from 'react-icons/fa';
+  import { FaInstagram, FaLinkedin, FaFacebook } from 'react-icons/fa';
   
 import styled from 'styled-components';
 
@@ -71,7 +71,7 @@ export default function SponsorHeader() {
         <SponsorHeader />
         <Wrapper>
             <div className ="wrap">
-            <SponsorSection title="Hype Fly India" subtitle = "Premium and Limited Sneakers and Streetwear" event="Raffle" about = "HypeFly India Products Private Limited is your go-to place for all things sneaker and streetwear. Whether you eat, sleep and breathe sneakers or are just looking to up your streetwear game, we have something in store for everyone. Founded in 2019, we hope to bring you the freshest brands, in premium quality, from across the world straight to the comfort of your home. Shop from a wide range of brands - limited Edition & authentic products are available online at our store with fast & safe delivery." instagram="#" twitter="#" link="https://www.hypefly.co.in" />
+            <SponsorSection title="Hype Fly India" subtitle = "Premium and Limited Sneakers and Streetwear" event="Raffle" about = "HypeFly India Products Private Limited is your go-to place for all things sneaker and streetwear. Whether you eat, sleep and breathe sneakers or are just looking to up your streetwear game, we have something in store for everyone. Founded in 2019, we hope to bring you the freshest brands, in premium quality, from across the world straight to the comfort of your home. Shop from a wide range of brands, available online at our store with fast & safe delivery." instagram="https://www.instagram.com/hypefly.in/?hl=en" facebook="https://www.facebook.com/hypefly.in/" linkedin="https://www.linkedin.com/company/hype-fly-india/about/" link="https://www.hypefly.co.in" />
             </div>
         </Wrapper>
        
@@ -112,13 +112,15 @@ export default function SponsorHeader() {
               <Text
                 color={useColorModeValue('gray.900', 'gray.400')}
                 fontWeight={300}
-                fontSize={'2xl'}>
+                fontSize={'2xl'}
+                mt={1}>
                     {props.subtitle}
               </Text>
               <Text
                 color={useColorModeValue('gray.900', 'gray.400')}
                 fontWeight={300}
-                fontSize={'xl'}>
+                fontSize={'xl'}
+                mt={1}>
                     <b>Event - {props.event}</b>
               </Text>
             </Box>
@@ -131,12 +133,12 @@ export default function SponsorHeader() {
                 {props.about}
                 </Text>
                 <Stack direction={'row'} spacing={6}>
-            <SocialButton label={'Twitter'} href={props.twitter}>
-              <FaTwitter />
+            <SocialButton label={'LinkedIn'} href={'props.linkedin'}>
+              <FaLinkedin />
             </SocialButton>
-            {/* <SocialButton label={'YouTube'} href={'#'}>
-              <FaYoutube />
-            </SocialButton> */}
+            <SocialButton label={'Facebook'} href={'props.facebook'}>
+              <FaFacebook />
+            </SocialButton>
             <SocialButton label={'Instagram'} href={props.instagram}>
               <FaInstagram />
             </SocialButton>
