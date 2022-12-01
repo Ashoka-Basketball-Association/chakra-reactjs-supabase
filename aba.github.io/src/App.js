@@ -12,7 +12,7 @@ import { Games } from './pages/Games/Games';
 import { CourtBooking } from './pages/CourtBooking/CourtBooking';
 import { SponsorPage } from './pages/SponsorPage/SponsorPage';
 import { Archive } from './pages/Archive/Archive';
-import HighlightsPage from './components/HighlightsPage/HighlightsPage';
+import { HighlightsPage } from './components/HighlightsPage/HighlightsPage';
 
 const theme = extendTheme({
   fonts: {
