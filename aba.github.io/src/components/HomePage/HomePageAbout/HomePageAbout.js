@@ -10,14 +10,24 @@ import {
 import React from 'react';
 import { Checkbox, Input, Modal, Popover, Row } from '@nextui-org/react';
 import pic from '../../../assets/img/pic1.jpg';
+import { useToast } from '@chakra-ui/react';
 
 export default function HomePageAbout() {
   const [visible, setVisible] = React.useState(false);
   const handler = () => setVisible(true);
   const closeHandler = () => {
-    setVisible(false);
     console.log('closed');
+    setVisible(false);
+    toast({
+      title: 'Message sent.',
+      description: "We've sent your message over to ABA Management.",
+      status: 'success',
+      duration: 9000,
+      isClosable: true,
+    });
   };
+  const toast = useToast();
+
   return (
     <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
       <Flex p={8} flex={1} align={'center'} justify={'center'}>
