@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import bannerVideo from '../../assets/videos/bannerVideo.mp4';
+import bannerVideo from '../../../assets/videos/bannerVideo.mp4';
 
 const Wrapper = styled.div`
   .overlay {

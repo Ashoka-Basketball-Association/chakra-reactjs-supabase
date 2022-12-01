@@ -5,7 +5,7 @@ const HomePageInstaFeed = () => {
   return (
     <>
       <InstagramFeed
-        token="IGQVJVNEtwLXcwZAk50OW82QTBoMGs1M1FxYnpraXBnNEN5WWJGZAjJQX0lUY2cwNmtabUI3Q0tGQ3ExQ0ZAOYXlHX2Fyb1llQUhic1VOWE1LMG9ZATFBHVVZAGMHB2dGowemdzTWNiSl9fSEk1UHdIMlhoSwZDZD"
+        token="IGQVJWMF9XbVBNTUlHemZA5QXc3bVlHUUtvYk9wTUZAEWUxNNFE2RWZAzVERBUlFMVEZAkRmplYjIwX3pSNTJZAOTRKb3BOVTZAKSGFMVG0ydV9pMW8wdk5BOWdKN1ppVDRHaVc4WkhjRmtFSDM2emFxb0pibAZDZD"
         counter="12"
       />
     </>

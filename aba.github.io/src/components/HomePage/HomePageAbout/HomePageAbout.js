@@ -7,7 +7,7 @@ import {
   Text,
   useBreakpointValue,
 } from '@chakra-ui/react';
-import pic from '../../assets/img/pic1.jpg';
+import pic from '../../../assets/img/pic1.jpg';
 
 export default function HomePageAbout() {
   return (
