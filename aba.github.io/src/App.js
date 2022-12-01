@@ -35,7 +35,7 @@ function App() {
               <Route exact path="/sponsors" element={<SponsorPage />} />
               <Route exact path="/games" element={<Games />} />
               <Route exact path="/archive" element={<Archive />} />
-              <Route exact path="/highlights" element={<HighlightsPage />} />
+              {/* <Route exact path="/highlights" element={<HighlightsPage />} /> */}
             </Routes>
           </Router>
         </div>

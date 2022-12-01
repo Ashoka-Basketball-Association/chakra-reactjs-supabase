@@ -7,7 +7,7 @@ export default function Header() {
     {value:'Auction', href:"/auction"},
     {value:'Teams', href:"/teams"},
     {value:'Games', href:'/games'},
-    {value:'Highlights', href:'/highlights'},
+    // {value:'Highlights', href:'/highlights'},
     {value:'Sponsors', href:"/sponsors"},
     {value:'Archive', href:"/archive"},
     {value:'Court Booking', href:'/court-booking'}

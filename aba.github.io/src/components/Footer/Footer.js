@@ -56,7 +56,7 @@ export function Footer() {
           <Link href={'/auction'}>Auction</Link>
           <Link href={'/teams'}>Teams</Link>
           <Link href={'/games'}>Games</Link>
-          <Link href={'/highlights'}>Highlights</Link>
+          {/* <Link href={'/highlights'}>Highlights</Link> */}
         </Stack>
         <Stack direction={'row'} spacing={6}>
           <Link href={'/sponsors'}>Sponsors</Link>
