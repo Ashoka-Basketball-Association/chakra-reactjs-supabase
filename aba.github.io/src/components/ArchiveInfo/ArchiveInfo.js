@@ -134,7 +134,7 @@ import {
             </Text>
             <Heading>ABA 4.0</Heading>
             <Text color={'gray.500'} fontSize={'lg'}>
-              The last ABA to take place before the pandemic, ABA 4.0 showcased the talents of all the Ashokan basketball players - leading to an intense two days of competiton.
+              The last ABA to take place before the pandemic, ABA 4.0 showcased the talents of all Ashokan ballers - leading to an intense two days of competiton.
             </Text>
             <Stack
               spacing={4}

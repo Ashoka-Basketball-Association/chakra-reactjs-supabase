@@ -133,10 +133,10 @@ export default function SponsorHeader() {
                 {props.about}
                 </Text>
                 <Stack direction={'row'} spacing={6}>
-            <SocialButton label={'LinkedIn'} href={'props.linkedin'}>
+            <SocialButton label={'LinkedIn'} href={props.linkedin}>
               <FaLinkedin />
             </SocialButton>
-            <SocialButton label={'Facebook'} href={'props.facebook'}>
+            <SocialButton label={'Facebook'} href={props.facebook}>
               <FaFacebook />
             </SocialButton>
             <SocialButton label={'Instagram'} href={props.instagram}>
