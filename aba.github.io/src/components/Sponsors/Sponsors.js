@@ -9,17 +9,13 @@ import {
     Button,
     Heading,
     SimpleGrid,
-    StackDivider,
     useColorModeValue,
     VisuallyHidden,
     chakra,
     Link,
-    ListItem,
   } from '@chakra-ui/react';
-  import { MdLocalShipping } from 'react-icons/md';
   import { FaInstagram, FaTwitter } from 'react-icons/fa';
   
-import { StarIcon } from '@chakra-ui/icons';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
@@ -53,7 +49,7 @@ const SocialButton = ({ children, label, href }) => {
     );
   };
 
-export default function Success() {
+export default function SponsorHeader() {
   return (
     <Box textAlign="center" py={100} px={6}>
       {/* <StarIcon boxSize={'50px'} color={'yellow.500'} /> */}
@@ -72,9 +68,21 @@ export default function Success() {
   export function Sponsors() {
     return (
         <>
-        <Success />
+        <SponsorHeader />
         <Wrapper>
             <div className ="wrap">
+            <SponsorSection title="Hype Fly India" subtitle = "Premium and Limited Sneakers and Streetwear" event="Raffle" about = "HypeFly India Products Private Limited is your go-to place for all things sneaker and streetwear. Whether you eat, sleep and breathe sneakers or are just looking to up your streetwear game, we have something in store for everyone. Founded in 2019, we hope to bring you the freshest brands, in premium quality, from across the world straight to the comfort of your home. Shop from a wide range of brands - limited Edition & authentic products are available online at our store with fast & safe delivery." instagram="#" twitter="#" link="https://www.hypefly.co.in" />
+            </div>
+        </Wrapper>
+       
+        </>
+    );
+  }
+
+
+  export function SponsorSection(props) {
+    return (
+        <>
             <Container maxW={'7xl'}>
         <SimpleGrid
           columns={{ base: 1, lg: 2 }}
@@ -99,19 +107,19 @@ export default function Success() {
                 lineHeight={1.1}
                 fontWeight={600}
                 fontSize={{ base: '2xl', sm: '4xl', lg: '5xl' }}>
-                Hype Fly India
+                {props.title}
               </Heading>
               <Text
                 color={useColorModeValue('gray.900', 'gray.400')}
                 fontWeight={300}
                 fontSize={'2xl'}>
-                    Premium and Limited Sneakers and Streetwear
+                    {props.subtitle}
               </Text>
               <Text
                 color={useColorModeValue('gray.900', 'gray.400')}
                 fontWeight={300}
                 fontSize={'xl'}>
-                    <b>Event - Raffle</b>
+                    <b>Event - {props.event}</b>
               </Text>
             </Box>
   
@@ -120,24 +128,20 @@ export default function Success() {
               direction={'column'}>
               <VStack spacing={{ base: 4, sm: 6 }}>
                 <Text fontSize={'lg'} color="gray.500">
-                HypeFly India Products Private Limited is your go-to place for all things sneaker and streetwear. Whether you eat, sleep and breathe sneakers or are just looking to up your streetwear game, we have something in store for everyone.
-
-Founded in 2019, we hope to bring you the freshest brands, in premium quality, from across the world straight to the comfort of your home.
-
-At Hype Fly India, legitimacy is one aspect we never forgo. Our team is dedicated to giving you the best service in the business. Customer relationships are of utmost importance to us, we would love to connect with you, don’t hesitate to reach out to us!
+                {props.about}
                 </Text>
                 <Stack direction={'row'} spacing={6}>
-            <SocialButton label={'Twitter'} href={'#'}>
+            <SocialButton label={'Twitter'} href={props.twitter}>
               <FaTwitter />
             </SocialButton>
             {/* <SocialButton label={'YouTube'} href={'#'}>
               <FaYoutube />
             </SocialButton> */}
-            <SocialButton label={'Instagram'} href={'#'}>
+            <SocialButton label={'Instagram'} href={props.instagram}>
               <FaInstagram />
             </SocialButton>
           </Stack>
-                <Link  href="https://hypefly.co.in" target="_blank"  w={'full'}>
+                <Link  href={props.link} target="_blank"  w={'full'}>
                 <Button
               rounded={'none'}
               w={'full'}
@@ -159,10 +163,7 @@ At Hype Fly India, legitimacy is one aspect we never forgo. Our team is dedicate
             </Stack>
     </Stack>
         </SimpleGrid>
-      </Container>
-            </div>
-        </Wrapper>
-       
+      </Container>       
         </>
     );
   }

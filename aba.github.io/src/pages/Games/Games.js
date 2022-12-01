@@ -8,11 +8,11 @@ const Wrapper = styled.div`
     }
 `
 
-export const CourtBooking = () => {
+export const Games = () => {
   return (
     <Wrapper>
     <div className = "wrap">
-      <ComingSoon title="Court Booking" desc="Court booking is not available yet. Access to this page will be available after the auction is over and teams have been formed."/>
+      <ComingSoon title="Game Statistics" desc="Data about games is not available as of now. Check back in when the competition has commenced, to see all the details about every team and players and performance in one place."/>
     </div>
     </Wrapper>
   );

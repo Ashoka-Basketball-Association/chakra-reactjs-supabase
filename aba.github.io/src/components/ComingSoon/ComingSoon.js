@@ -9,7 +9,7 @@ import {
   Link
 } from '@chakra-ui/react';
 
-export default function ComingSoon() {
+export default function ComingSoon(props) {
   return (
     <>
       <Container maxW={'3xl'}>
@@ -24,11 +24,11 @@ export default function ComingSoon() {
             lineHeight={'110%'}>
             ABA 6.0<br />
             <Text as={'span'} color={'green.400'}>
-              Court Booking
+              {props.title}
             </Text>
           </Heading>
           <Text color={'gray.500'} fontSize={{ base: 'sm', sm: 'lg', md: 'xl' }}>
-           Court booking is not available yet. Access to this page will be available after the auction is over and teams have been formed.
+           {props.desc}
           </Text>
           <Stack
             direction={'column'}

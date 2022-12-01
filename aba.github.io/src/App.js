@@ -8,8 +8,10 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import { AuctionPage } from './pages/Auction/auction';
 import { TeamPage } from './pages/Teams/teams'
+import { Games } from "./pages/Games/Games"
 import { CourtBooking } from "./pages/CourtBooking/CourtBooking"
 import { SponsorPage } from "./pages/SponsorPage/SponsorPage"
+import { Archive } from "./pages/Archive/Archive"
 
 const theme = extendTheme({
   fonts: {
@@ -30,6 +32,8 @@ function App() {
               <Route exact path="/teams" element={<TeamPage />} />
               <Route exact path="/court-booking" element={<CourtBooking />} />
               <Route exact path="/sponsors" element={<SponsorPage />} />
+              <Route exact path="/games" element={<Games />} />
+              <Route exact path="/archive" element={<Archive />} />
             </Routes>
           </Router>
         </div>
