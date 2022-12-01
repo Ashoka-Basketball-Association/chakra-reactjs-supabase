@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChakraProvider } from '@chakra-ui/react';
+import { ChakraProvider, Highlight } from '@chakra-ui/react';
 import { Footer } from './components/Footer/Footer';
 import { extendTheme } from '@chakra-ui/react';
 import { NextUIProvider } from '@nextui-org/react';
@@ -7,11 +7,12 @@ import Header from './components/Header/Header';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import { AuctionPage } from './pages/Auction/auction';
-import { TeamPage } from './pages/Teams/teams'
-import { Games } from "./pages/Games/Games"
-import { CourtBooking } from "./pages/CourtBooking/CourtBooking"
-import { SponsorPage } from "./pages/SponsorPage/SponsorPage"
-import { Archive } from "./pages/Archive/Archive"
+import { TeamPage } from './pages/Teams/teams';
+import { Games } from './pages/Games/Games';
+import { CourtBooking } from './pages/CourtBooking/CourtBooking';
+import { SponsorPage } from './pages/SponsorPage/SponsorPage';
+import { Archive } from './pages/Archive/Archive';
+import HighlightsPage from './components/HighlightsPage/HighlightsPage';
 
 const theme = extendTheme({
   fonts: {
@@ -34,6 +35,7 @@ function App() {
               <Route exact path="/sponsors" element={<SponsorPage />} />
               <Route exact path="/games" element={<Games />} />
               <Route exact path="/archive" element={<Archive />} />
+              <Route exact path="/highlights" element={<HighlightsPage />} />
             </Routes>
           </Router>
         </div>
