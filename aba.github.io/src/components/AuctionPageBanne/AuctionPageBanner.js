@@ -11,6 +11,7 @@ import {
   // createIcon,
   useColorModeValue,
 } from '@chakra-ui/react';
+import HomePageInstaFeed from '../HomePage/HomePageInstaFeed/HomePageInstaFeed';
 
 export function AuctionPageBanner() {
   return (

@@ -17,6 +17,7 @@ const HomePage = () => {
       {/* <HomePageInstaFeed /> */}
       <HomePageCulture />
       <HomePagePrizes />
+      <NewsTicker />
     </>
   );
 };

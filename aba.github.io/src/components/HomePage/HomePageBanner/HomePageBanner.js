@@ -26,6 +26,7 @@ const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
     // padding-bottom: 35vh;
+    padding-top: 13vh;
     font-size: 5vmax;
     text-align: center;
     white-space: nowrap;
@@ -38,7 +39,6 @@ const HomePageBanner = () => {
     <Wrapper>
       <div className="overlay"> </div>
       <video src={bannerVideo} autoPlay muted loop />
-
       <div className="content">
         <h1>Welcome to ABA.</h1>
       </div>

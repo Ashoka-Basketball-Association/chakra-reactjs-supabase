@@ -11,6 +11,7 @@ import {
   // createIcon,
   useColorModeValue,
 } from '@chakra-ui/react';
+import HomePageInstaFeed from '../HomePage/HomePageInstaFeed/HomePageInstaFeed';
 
 export function HighlightsPage() {
   return (
@@ -96,12 +97,13 @@ export function HighlightsPage() {
               w={'100%'}
               h={'100%'}
               src={
-                'https://d7hftxdivxxvm.cloudfront.net/?resize_to=width&src=https%3A%2F%2Fartsy-media-uploads.s3.amazonaws.com%2FxzqPJtDRTUr4dtt2Tpra1A%252Fd7hftxdivxxvm.cloudfront-34.jpg&width=910&quality=80'
+                'https://news.cgtn.com/news/2022-04-03/NBA-highlights-on-April-2-Do-Jazz-know-how-to-deal-with-big-lead--18VPLVbjbYk/img/21d89522151e413f94ef4ba8e6626756/21d89522151e413f94ef4ba8e6626756.jpeg'
               }
             />
           </Box>
         </Flex>
       </Stack>
+      <HomePageInstaFeed />
     </Container>
   );
 }
