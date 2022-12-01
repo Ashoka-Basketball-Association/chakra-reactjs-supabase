@@ -11,12 +11,12 @@ const HomePage = () => {
   return (
     <>
       {/* <QuickNews /> */}
+      <NewsTicker />
       <HomePageBanner />
       <HomePageAbout />
       {/* <HomePageInstaFeed /> */}
       <HomePageCulture />
       <HomePagePrizes />
-      <NewsTicker />
     </>
   );
 };

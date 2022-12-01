@@ -5,17 +5,17 @@ const NewsTicker = () => {
     <Marquee
       pauseOnHover={true}
       speed={40}
-      style={{ background: 'black', color: 'white', padding: '4px' }}
+      style={{ background: 'black', color: 'white', paddingTop: '12px', paddingBottom: '12px' }}
       gradientColor={[0, 0, 0]}
     >
       <h1
         style={{
-          fontSize: '16px',
-          fontWeight: '900',
+          fontSize: '20px',
+          fontWeight: '500',
           fontFamily: 'Manrope, sans-serif',
         }}
       >
-        AUCTION TONIGHT AT THE MPH!
+        AUCTION TONIGHT AT THE SPORTS MPH! &nbsp; BE THERE AT 6:30PM
       </h1>
     </Marquee>
   );

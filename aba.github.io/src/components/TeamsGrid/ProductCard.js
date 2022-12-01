@@ -34,7 +34,7 @@ import {
             <Image
               src={props.team.logo}
               alt={props.team.name}
-            //   cursor="pointer"
+              cursor="pointer"
               draggable="false"
               fallback={<Skeleton />}
               borderRadius={useBreakpointValue({
@@ -46,7 +46,7 @@ import {
         </Box>
 
       </Stack>
-      {/* <Modal
+      <Modal
       closeButton
       blur
       aria-labelledby="modal-title"
@@ -60,9 +60,9 @@ import {
       </Modal.Header>
       <Modal.Body>
         {props.team.desc}
-        <br></br>
-        <br></br>
-        <Text b size={20}>
+        {/* {/* <br></br> */}
+        <br></br> 
+        {/* <Text b size={20}>
             Players
         </Text>
         <Table
@@ -87,9 +87,9 @@ import {
         )
         )}
       </Table.Body>
-    </Table>
+    </Table> */}
       </Modal.Body>
-    </Modal> */}
+    </Modal>
     </>
     )
   }
