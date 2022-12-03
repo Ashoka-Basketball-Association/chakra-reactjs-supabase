@@ -15,7 +15,7 @@ const NewsTicker = () => {
           fontFamily: 'Manrope, sans-serif',
         }}
       >
-        AUCTION TONIGHT AT THE SPORTS MPH! &nbsp; BE THERE AT 7:00PM
+        ABA Beginning in less than a week! Games start on Friday
       </h1>
     </Marquee>
   );
