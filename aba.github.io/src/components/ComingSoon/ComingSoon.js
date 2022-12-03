@@ -8,6 +8,7 @@ import {
   Stack,
   Link
 } from '@chakra-ui/react';
+import { InlineWidget } from "react-calendly";
 
 export default function ComingSoon(props) {
   return (
@@ -30,25 +31,10 @@ export default function ComingSoon(props) {
           <Text color={'gray.500'} fontSize={{ base: 'sm', sm: 'lg', md: 'xl' }}>
            {props.desc}
           </Text>
-          <Stack
-            direction={'column'}
-            spacing={3}
-            align={'center'}
-            alignSelf={'center'}
-            position={'relative'}>
-            <Link href="/">
-            <Button
-              colorScheme={'green'}
-              bg={'green.400'}
-              rounded={'full'}
-              px={6}
-              _hover={{
-                bg: 'green.500',
-              }}>
-              Return to Home
-            </Button>
-            </Link>
-          </Stack>
+          <InlineWidget url= "https://calendly.com/aba-ashoka/dhaba-volleyball" />
+          <InlineWidget url= "https://calendly.com/aba-ashoka-frisbee/book" />
+          <InlineWidget url= "https://calendly.com/aba-ashoka-pool-gym/book" />
+          <InlineWidget url= "https://calendly.com/ashoka-aba/book" />
         </Stack>
       </Container>
     </>

@@ -12,7 +12,7 @@ export const CourtBooking = () => {
   return (
     <Wrapper>
     <div className = "wrap">
-      <ComingSoon title="Court Booking" desc="Court booking is not available yet. Access to this page will be available after the auction is over and teams have been formed."/>
+      <ComingSoon title="Court Booking" desc="Book the court side you need to practice. There are 4 half courts available. Keep the booking confirmation email once it has been scheduled."/>
     </div>
     </Wrapper>
   );

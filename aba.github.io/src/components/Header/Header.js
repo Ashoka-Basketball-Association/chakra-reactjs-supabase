@@ -10,7 +10,7 @@ export default function Header() {
     // {value:'Highlights', href:'/highlights'},
     {value:'Sponsors', href:"/sponsors"},
     {value:'Archive', href:"/archive"},
-    {value:'Court Booking', href:'/court-booking'}
+    // {value:'Court Booking', href:'/court-booking'}
   ];
 
   var active = window.location.pathname;
