@@ -1,5 +1,5 @@
 import React from 'react';
-import ComingSoon from '../../components/ComingSoon/ComingSoon';
+import ComingSoon from '../../components/ComingSoon/GamesComingSoon';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
