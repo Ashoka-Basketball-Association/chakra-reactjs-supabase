@@ -5,7 +5,12 @@ const NewsTicker = () => {
     <Marquee
       pauseOnHover={true}
       speed={40}
-      style={{ background: 'black', color: 'white', paddingTop: '12px', paddingBottom: '12px' }}
+      style={{
+        background: 'black',
+        color: 'white',
+        paddingTop: '12px',
+        paddingBottom: '12px',
+      }}
       gradientColor={[0, 0, 0]}
     >
       <h1
@@ -15,7 +20,9 @@ const NewsTicker = () => {
           fontFamily: 'Manrope, sans-serif',
         }}
       >
-        ABA Beginning in less than a week! Games start on Friday
+        <a href="https://forms.gle/dWmTCQNZgjeKGbLo6">
+          Click here to preorder Domino's Pizza Now!
+        </a>
       </h1>
     </Marquee>
   );
