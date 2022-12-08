@@ -1,6 +1,7 @@
 import React from 'react';
 import ComingSoon from '../../components/ComingSoon/GamesComingSoon';
 import styled from 'styled-components';
+import {App} from "../../components/GamesGrid/Test"
 
 const Wrapper = styled.div`
     .wrap{
@@ -13,6 +14,7 @@ export const Games = () => {
     <Wrapper>
     <div className = "wrap">
       <ComingSoon title="Game Statistics" desc="Data about games is not available as of now. Check back in when the competition has commenced, to see all the details about every team and players and performance in one place."/>
+      <App />
     </div>
     </Wrapper>
   );
