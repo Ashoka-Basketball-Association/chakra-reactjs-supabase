@@ -13,6 +13,7 @@ import { CourtBooking } from './pages/CourtBooking/CourtBooking';
 import { SponsorPage } from './pages/SponsorPage/SponsorPage';
 import { Archive } from './pages/Archive/Archive';
 import { HighlightsPage } from './components/HighlightsPage/HighlightsPage';
+import {EachGame} from "./pages/Games/EachGame"
 
 const theme = extendTheme({
   fonts: {
@@ -35,6 +36,7 @@ function App() {
               <Route exact path="/sponsors" element={<SponsorPage />} />
               <Route exact path="/games" element={<Games />} />
               <Route exact path="/archive" element={<Archive />} />
+              <Route path="/games/:gameId" element={<EachGame />} />
               {/* <Route exact path="/highlights" element={<HighlightsPage />} /> */}
             </Routes>
           </Router>
