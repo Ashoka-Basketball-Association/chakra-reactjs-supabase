@@ -60,9 +60,9 @@ import {
       </Modal.Header>
       <Modal.Body>
         {props.team.desc}
-        {/* {/* <br></br> */}
+        {/* <br></br>
         <br></br> 
-        {/* <Text b size={20}>
+        <Text b size={20}>
             Players
         </Text>
         <Table

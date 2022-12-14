@@ -1,7 +1,7 @@
 import React from 'react';
 import ComingSoon from '../../components/ComingSoon/GamesComingSoon';
 import styled from 'styled-components';
-import {App} from "../../components/GamesGrid/Test"
+import {GamesGrid} from "../../components/GamesGrid/GamesGrid"
 
 const Wrapper = styled.div`
     .wrap{
@@ -13,8 +13,8 @@ export const Games = () => {
   return (
     <Wrapper>
     <div className = "wrap">
-      <ComingSoon title="Game Statistics" desc="Data about games is not available as of now. Check back in when the competition has commenced, to see all the details about every team and players and performance in one place."/>
-      <App />
+      <ComingSoon title="Games" desc=" Here, you can see how your favorite team is performing in the tournament and how they stack up against their competitors. Use this page to stay up to date on the tournament and see which teams are leading the pack. "/>
+      <GamesGrid />
     </div>
     </Wrapper>
   );

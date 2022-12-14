@@ -56,6 +56,7 @@ export function TeamsGrid(){
             for (var i in test){
                 if(!containsObject(test[i].team, teams)){
                     var obj = test[i].team;
+                    console.log(obj)
                     obj.players = []
                     teams.push(obj)
                 }

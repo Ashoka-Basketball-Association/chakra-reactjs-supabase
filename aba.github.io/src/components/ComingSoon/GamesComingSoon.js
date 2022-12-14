@@ -31,18 +31,6 @@ import {
             <Text color={'gray.500'} fontSize={{ base: 'sm', sm: 'lg', md: 'xl' }}>
              {props.desc}
             </Text>
-            <Link href={"/"}>
-            <Button
-              colorScheme={'green'}
-              bg={'green.400'}
-              rounded={'full'}
-              px={6}
-              _hover={{
-                bg: 'green.500',
-              }}>
-              Return to Home
-            </Button>
-            </Link>
           </Stack>
         </Container>
       </>
