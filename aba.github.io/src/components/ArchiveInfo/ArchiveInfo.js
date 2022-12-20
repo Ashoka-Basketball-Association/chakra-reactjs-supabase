@@ -20,7 +20,6 @@ import {
 import aba5 from '../../assets/img/aba5.jpeg';
 import four from '../../assets/img/4.0.JPG';
 import svb from '../../assets/img/svb.jpeg';
-import svb2 from '../../assets/img/svb2.jpeg';
 
 const Feature = ({ text, icon, iconBg }) => {
   return (

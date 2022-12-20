@@ -6,7 +6,6 @@ import StandingsTableP1 from '../../components/StandingsTable/StandingsTableP1';
 import StandingsTableP2 from '../../components/StandingsTable/StandingsTableP2';
 import StandingsTableP3 from '../../components/StandingsTable/StandingsTableP3';
 import StandingsTableP4 from '../../components/StandingsTable/StandingsTableP4';
-import TournamentBracket from '../../components/TournamentBracket/TournamentBracket';
 
 const Wrapper = styled.div`
   .group-heading {
@@ -34,7 +33,6 @@ const Standings = () => {
         <StandingsTableP3 />
         <Heading className="pool-heading">Pool 4</Heading>
         <StandingsTableP4 />
-        {/* <TournamentBracket /> */}
       </Container>
     </Wrapper>
   );
