@@ -16,6 +16,9 @@ import {
   IoPodium,
   IoCalendarNumber,
   IoCashOutline,
+  IoDiamondOutline,
+  IoInvertModeOutline,
+  IoLogoAppleAr,
 } from 'react-icons/io5';
 import aba5 from '../../assets/img/aba5.jpeg';
 import four from '../../assets/img/4.0.JPG';
@@ -96,6 +99,32 @@ export function ArchiveInfo() {
                 icon={<Icon as={IoPodium} color={'orange.500'} w={5} h={5} />}
                 iconBg={useColorModeValue('orange.100', 'orange.900')}
                 text={"Non-Cis Men's MVP - Aditi Narunkar"}
+              />
+              <Feature
+                icon={
+                  <Icon as={IoDiamondOutline} color={'green.500'} w={5} h={5} />
+                }
+                iconBg={useColorModeValue('green.100', 'green.900')}
+                text={'Best Defensive Player - Siddh Veer Bakshi'}
+              />
+              <Feature
+                icon={
+                  <Icon
+                    as={IoInvertModeOutline}
+                    color={'green.500'}
+                    w={5}
+                    h={5}
+                  />
+                }
+                iconBg={useColorModeValue('green.100', 'green.900')}
+                text={'Most Promising Player - Aadityan Iyer'}
+              />{' '}
+              <Feature
+                icon={
+                  <Icon as={IoLogoAppleAr} color={'green.500'} w={5} h={5} />
+                }
+                iconBg={useColorModeValue('green.100', 'green.900')}
+                text={'Unsung Hero - Harrsh Dewan'}
               />
               <Feature
                 icon={
