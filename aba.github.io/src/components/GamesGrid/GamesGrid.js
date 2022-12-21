@@ -101,11 +101,28 @@ export function GamesGrid() {
 
 
 const Game = (props) =>{
+  var gameno = props.item.game_number;
+  if (gameno < 25){
+    gameno = "Game " + gameno;
+  }
+  else if (gameno >= 25 && gameno <= 28){
+    gameno = "QF " + (gameno - 24);
+  }
+  else if (gameno >= 29 && gameno <= 30){
+    gameno = "SF " + (gameno - 28)
+  }
+  else if(gameno === 31){
+    gameno = "Third Place"
+  }
+  else if(gameno === 32){
+    gameno = "Final"
+  }
   const date = convDate(props.item.date);
     return(
-        <Card variant="bordered" isHoverable isPressable onPressEnd={(e) => (window.open(`/games/${props.item.game_number}`,"_self"))}>
+      //  onPressEnd={(e) => (window.open(`/games/${props.item.game_number}`,"_self"))}
+        <Card variant="bordered" isHoverable isPressable>
              <Card.Header>
-            <Text><b>Game {props.item.game_number}</b></Text>
+            <Text><b>{gameno}</b></Text>
           </Card.Header>
           <Card.Divider />
          <Card.Body>

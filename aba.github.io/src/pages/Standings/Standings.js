@@ -16,24 +16,33 @@ const Wrapper = styled.div`
   .pool-heading {
     padding: 20px;
   }
+
+  .padding{
+    height: 7.5vh;
+  }
+
 `;
 
 const Standings = () => {
   return (
     <Wrapper>
       <Container>
-        <Heading size="2xl" className="group-heading">
+        <Heading size="4xl" className="group-heading" marginTop = "5vh">
           Group Stage
         </Heading>
         <Heading className="pool-heading">Pool 1</Heading>
         <StandingsTableP1 />
+        <div className="padding"></div>
         <Heading className="pool-heading">Pool 2</Heading>
         <StandingsTableP2 />
+        <div className="padding"></div>
         <Heading className="pool-heading">Pool 3</Heading>
         <StandingsTableP3 />
+        <div className="padding"></div>
         <Heading className="pool-heading">Pool 4</Heading>
         <StandingsTableP4 />
       </Container>
+      <div className = "padding"></div>
     </Wrapper>
   );
 };
