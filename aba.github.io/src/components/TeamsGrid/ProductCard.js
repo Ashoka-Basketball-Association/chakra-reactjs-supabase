@@ -74,7 +74,7 @@ export const ProductCard = props => {
             <Table.Header>
               <Table.Column>Name</Table.Column>
               <Table.Column>Tier</Table.Column>
-              {/* <Table.Column>Price</Table.Column> */}
+              <Table.Column>Price</Table.Column>
             </Table.Header>
             <Table.Body>
               {props.team.players.map(player => (
@@ -83,7 +83,7 @@ export const ProductCard = props => {
                     <Text b>{player.name}</Text>
                   </Table.Cell>
                   <Table.Cell>{player.tier}</Table.Cell>
-                  {/* <Table.Cell textAlign="center">{player.price}</Table.Cell> */}
+                  <Table.Cell textAlign="center">{player.price}</Table.Cell>
                 </Table.Row>
               ))}
             </Table.Body>
