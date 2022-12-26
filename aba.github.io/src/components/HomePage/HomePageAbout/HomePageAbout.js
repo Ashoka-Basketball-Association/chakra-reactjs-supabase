@@ -18,6 +18,17 @@ export default function HomePageAbout() {
   const closeHandler = () => {
     console.log('closed');
     setVisible(false);
+    // toast({
+    //   title: 'Message sent.',
+    //   description: "We've sent your message over to ABA Management.",
+    //   status: 'success',
+    //   duration: 9000,
+    //   isClosable: true,
+    // });
+  };
+  const closeHandlerSend = () => {
+    console.log('closed');
+    setVisible(false);
     toast({
       title: 'Message sent.',
       description: "We've sent your message over to ABA Management.",
@@ -123,7 +134,7 @@ export default function HomePageAbout() {
                 <Button auto flat color="error" onClick={closeHandler}>
                   Close
                 </Button>
-                <Button auto onClick={closeHandler}>
+                <Button auto onClick={closeHandlerSend}>
                   Send
                 </Button>
               </Modal.Footer>

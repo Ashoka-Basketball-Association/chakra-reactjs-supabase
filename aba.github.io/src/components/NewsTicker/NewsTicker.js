@@ -20,9 +20,8 @@ const NewsTicker = () => {
           fontFamily: 'Manrope, sans-serif',
         }}
       >
-        <a href="https://forms.gle/dWmTCQNZgjeKGbLo6">
-          Click here to preorder Domino's Pizza Now!
-        </a>
+        ABA 6.0 is now officially over! Congratulations to Team Escobar on
+        winning it all!
       </h1>
     </Marquee>
   );
